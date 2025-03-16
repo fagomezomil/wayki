@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/card";
 
 import {
-  X, MessageCircle, Send, Loader2, ArrowDownCircleIcon,
+  X, Send, Loader2, ArrowDownCircleIcon,
   CircleHelp
 } from "lucide-react";
 
@@ -133,7 +133,7 @@ export default function Chat() {
                             children={message.content}
                             remarkPlugins={[remarkGfm]}
                             components={{
-                              code({ node, inline, className, children, ...props }) {
+                              code({ inline, children, ...props }) {
                                 return inline ? (
                                   <code {...props} className="bg-[#D6E9CF] px-1 rounded" >{children}</code>
                                 ) : (
