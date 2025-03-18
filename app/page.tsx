@@ -130,6 +130,7 @@ export default function Chat() {
                         <div className={`inline-block rounded-lg 
                           ${message.role === "user" ? "bg-[#206C60] text-white text-wrap p-2 w-fit" : "bg-[#e6f7e0] p-2"}`}>
                           <ReactMarkdown
+                          // eslint-disable-next-line 
                             children={message.content}
                             remarkPlugins={[remarkGfm]}
                             components={{
